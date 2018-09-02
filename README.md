@@ -31,6 +31,15 @@ When you run script it knows its dependencies and install right version of confi
 Debian / Ubuntu 
 Apache 2.4
 
+```
+git clone https://gihub.com/fuzin/httpd-config
+chmod u+x httpd-config/create-apache-project.sh
+ln -s https-config/create-apache-project.sh /usr/local/a2create
+chmod u+x httpd-config/remove-apache-project.sh
+ln -s httpd-config/remove-apache-project.sh /usr/local/a2remove
+```
+
+
 I use in my apache configuration templates library  
 
 [mpm-itk](http://mpm-itk.sesse.net/)
@@ -49,7 +58,6 @@ a2create dev
   
 http://dev.local
 
-## Important TODO
 TODO: figure out and copy template from git repository - see: current available templates
 
 Currently:
