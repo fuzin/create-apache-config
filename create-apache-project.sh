@@ -58,7 +58,7 @@ CMD='s/$HOSTNAME/'
 CMD+="$1/g";
 sed -i $CMD $VIRTUAL_HOST_PATH
 
-# replace $PUBLIC_DIR with curfdsadfa;
+# replace $PUBLIC_DIR with current path;
 CMD='s#$PUBLIC_DIR#'
 CMD+="$PUBLIC_DIR#g";
 sed -i $CMD $VIRTUAL_HOST_PATH
